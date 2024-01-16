@@ -2,9 +2,9 @@
 
 apt-get -y install make gcc dkms linux-source linux-headers-$(uname -r) build-essential neofetch gparted breeze-cursor-theme arc-theme papirus-icon-theme open-vm-tools-desktop open-vm-tools git fonts-cantarell fonts-firacode xfce4-panel-profiles mate-terminal
 mkdir -p /etc/skel/.config/xfce4/panel
-cp *.rs /etc/skel/.config/xfce4/panel/
+cp *.rc /etc/skel/.config/xfce4/panel/
 cp CustomBashrc /etc/skel/.bashrc
-cp CustomPanel.tar.bz2 /usr/share/xfce4-panel-profiles/layout
+cp CustomPanel.tar.bz2 /usr/share/xfce4-panel-profiles/layout/
 xfconf-query -c xsettings -p /Net/ThemeName -s "Arc-Dark"
 xfconf-query -c xsettings -p /Net/IconThemeName -s "ePapirus-Dark"
 xfconf-query -c xfwm4 -p /general/workspace_names -s 1 -s 2 -s 3 -s 4
@@ -13,6 +13,6 @@ update-alternatives --install  /usr/bin/x-terminal-emulator x-terminal-emulator 
 xfce4-panel-profiles load CustomPanel
 
 # Here need to move all the files in /etc/skel/ into the homedir of everyusers
-cp -r /etc/skel/* /root/
+cp -r /etc/skel/.* /root/
 
 echo "You may want to reboot to finalize the installation"
