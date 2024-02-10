@@ -2,12 +2,10 @@
 
 # This part is root part
 apt-get -y install make gcc dkms linux-source linux-headers-$(uname -r) build-essential neofetch gparted breeze-cursor-theme arc-theme papirus-icon-theme open-vm-tools-desktop open-vm-tools git fonts-cantarell fonts-firacode xfce4-panel-profiles xfce4-*-plugins qterminal qt5ct
-mkdir -p /etc/skel/.config/xfce4/panel
-cp *.rc /etc/skel/.config/xfce4/panel/
-cp CustomBashrc /etc/skel/.bashrc
+cp -r etc/* /etc/
+cp -r share/* /usr/share/
 cp -r /etc/skel/.* /root/
 cp -r /etc/skel/.* `ls -d /home/*`
-cp CustomPanel.tar.bz2 /usr/share/xfce4-panel-profiles/layouts/
 #update-alternatives --remove x-terminal-emulator /usr/bin/mate-terminal
 #update-alternatives --install  /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/mate-terminal 100
 
