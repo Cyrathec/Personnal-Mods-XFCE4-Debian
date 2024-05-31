@@ -10,11 +10,12 @@ For the installation, you'll need to do the following steps as root (sudo or su)
  - Clone the repo (not root specific, can be done as user)
  - Execute install.sh "bash install.sh"
  - Change permissions for any users in /home/ "chown -R username:username /home/username/"
+
 For the configuration, you'll need to do the following steps for all users :
  - Clone the repo (or copy it but don't forget the rights)
  - Execute config.sh "bash config.sh"
  - In the settings, you'll need to change the following : default applications -> Utilities -> Terminal Emulator to "Qterminal"
- - (Optional) In the settings, you may want to change the following : Session and Startup -> Advanced -> Launch GNOME services on startup -> Ticked (On)
+ - (Optional) In the settings, you may want to change the following : Session and Startup -> Advanced -> Launch GNOME services on startup -> Ticked (On)\
    This option allows some features to run by default like the ssh-agent, it can be usefull if you use ssh keys to login
  - Go to ~/.config/xfce4/panel in a terminal (CLI)
  - You'll need to disactivate the xfce4-panel "xfce4-panel -q"
