@@ -5,6 +5,7 @@ cp -r etc/* /etc/
 cp -r share/* /usr/share/
 cp -r /etc/skel/.* /root/
 cp -r /etc/skel/.* `ls -d /home/*`
+chmod 755 /user/panel-scripts/xfce4-panel-genmon-vpnip.sh
 
 # This part was for the default terminal, I highly recommand to use the settings instead as this will make strange things while using any other user than root
 #update-alternatives --remove x-terminal-emulator /usr/bin/mate-terminal
