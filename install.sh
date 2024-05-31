@@ -9,3 +9,6 @@ cp -r /etc/skel/.* `ls -d /home/*`
 # This part was for the default terminal, I highly recommand to use the settings instead as this will make strange things while using any other user than root
 #update-alternatives --remove x-terminal-emulator /usr/bin/mate-terminal
 #update-alternatives --install  /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/mate-terminal 100
+
+echo "Please reset permissions for users in /home/ (chown -R username:username /home/username/)"
+echo "You won't be able to connect to it until then due to right issues on some files that will be owned by root"
