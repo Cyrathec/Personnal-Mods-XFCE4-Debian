@@ -1,6 +1,8 @@
 #!/bin/bash
 
-apt-get -y install make gcc dkms linux-source linux-headers-$(uname -r) build-essential neofetch gparted breeze-cursor-theme arc-theme papirus-icon-theme open-vm-tools-desktop open-vm-tools git fonts-cantarell fonts-firacode xfce4-panel-profiles xfce4-*-plugins qterminal qt5ct
+apt-get -y install make gcc dkms linux-source linux-headers-$(uname -r) build-essential gparted breeze-cursor-theme arc-theme papirus-icon-theme open-vm-tools-desktop open-vm-tools git fonts-cantarell fonts-firacode xfce4-panel-profiles xfce4-*-plugins qterminal qt5ct
+# Neofetch doesn't seem present in Trixie's repos
+#apt-get -y install neofetch
 cp -r etc/* /etc/
 cp -r share/* /usr/share/
 cp -r /etc/skel/.* /root/

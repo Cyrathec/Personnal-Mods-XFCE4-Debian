@@ -1,7 +1,7 @@
 #!/bin/bash
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "Arc-Dark"
-xfconf-query -c xsettings -p /Net/IconThemeName -s "ePapirus-Dark"
+xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
 xfconf-query -c xfwm4 -p /general/workspace_names -s 1 -s 2 -s 3 -s 4
 xfce4-panel-profiles load /usr/share/xfce4-panel-profiles/layouts/CustomPanel.tar.bz2
 
