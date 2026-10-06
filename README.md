@@ -19,7 +19,7 @@ For the configuration, you'll need to do the following steps for all users :
    This option allows some features to run by default like the ssh-agent, it can be usefull if you use ssh keys to login
  - Go to ~/.config/xfce4/panel in a terminal (CLI)
  - You'll need to disactivate the xfce4-panel "xfce4-panel -q"
- - Now you can copy past cpugraph-21.rc, genmon-17.rc (and netload-6.rc if needed) to the other file
+ - Now you may need to replace ~cpugraph-5.rc, netload-6.rc,~ genmon-7.rc to the other file (this needs further investigation since Debian13 changes, there is no cpugraph.rc anymore and the netload-6.rc was already good)
  - You should now restart the machine to restart xfce-panel as a service (restarting it in CLI will make it stop when CLI is left)
  - Change the network monitoring to the proper interface
  - You may want to backup the panel configuration
